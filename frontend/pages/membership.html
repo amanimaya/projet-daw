@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership | Cirta Fitness Club</title>
+<link rel="stylesheet" href="../assets/css/index.css">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="headertrainer">
+
+
+<div  class="headertrainer-overlay">
+        
+        <!-- <div class="logo">
+        <img src="./assets/images/logo.png" alt="Cirte Fitness Club logo">
+        </div> -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/classes.html">Classes</a></li>
+          <li><a href="../pages/membership.html">Membership</a></li>
+          <li><a href="../pages/trainers.html">Trainers</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+   
+    <!-- hero section -->
+      
+       <section id="trainereroSection">
+      <h1> Gym Membership</h1>
+       <p>  Choose the membership plan that matches your fitness goals and join our club today.</p>
+       </section>
+      </div>
+</header>
+<!-- <header class="page-header">
+  <div class="header-overlay">
+    <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./classes.html">Classes</a></li>
+          <li><a href="./membership.html">Membership</a></li>
+          <li><a href="./trainers.html">Trainers</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    <h1 class="page-title">
+     Gym Membership
+    </h1>
+
+     <p class="page-description">
+     Choose the membership plan that matches your fitness goals and join our club today.
+     </p>
+  </div>
+</header> -->
+
+
+
+<main class="membership-page">
+
+
+<!-- =========================
+     MEMBERSHIP PLANS
+========================= -->
+
+<section class="membership-plans" aria-labelledby="plans-title">
+
+<h2 id="plans-title" class="section-title">
+
+
+Membership Plans
+
+</h2>
+
+
+<div class="plans-grid">
+
+<!-- BRONZE -->
+
+<article class="plan-card plan-bronze">
+
+<h3 class="plan-name">
+<span class="material-symbols-outlined">military_tech</span>
+Bronze Plan
+</h3>
+
+<p class="plan-price">$20 / Month</p>
+
+<dl class="plan-features">
+
+<dt>Access</dt>
+<dd>Gym equipment access</dd>
+
+<dt>Training</dt>
+<dd>Basic trainer support</dd>
+
+<dt>Facilities</dt>
+<dd>Locker room access</dd>
+
+</dl>
+
+<ul class="plan-benefits">
+<li>Cardio machines</li>
+<li>Weight training area</li>
+<li>Free water station</li>
+</ul>
+
+<a href="#membership-form" class="choose-plan-btn">
+Choose Bronze
+</a>
+
+</article>
+
+
+
+<!-- SILVER -->
+
+<article class="plan-card plan-silver">
+
+<h3 class="plan-name">
+<span class="material-symbols-outlined">workspace_premium</span>
+Silver Plan
+</h3>
+
+<p class="plan-price">$50 / 3 Months</p>
+
+<dl class="plan-features">
+
+<dt>Access</dt>
+<dd>Full gym access</dd>
+
+<dt>Classes</dt>
+<dd>Group training sessions</dd>
+
+<dt>Support</dt>
+<dd>Monthly fitness check</dd>
+
+</dl>
+
+<ul class="plan-benefits">
+<li>All Bronze benefits</li>
+<li>Group training classes</li>
+<li>Diet consultation</li>
+</ul>
+
+<a href="#membership-form" class="choose-plan-btn">
+Choose Silver
+</a>
+
+</article>
+
+
+
+<!-- GOLD -->
+
+<article class="plan-card plan-gold">
+
+<h3 class="plan-name">
+<span class="material-symbols-outlined">emoji_events</span>
+Gold Plan
+</h3>
+
+<p class="plan-price">$180 / Year</p>
+
+<dl class="plan-features">
+
+<dt>Access</dt>
+<dd>Unlimited gym access</dd>
+
+<dt>Coaching</dt>
+<dd>Personal trainer sessions</dd>
+
+<dt>Extras</dt>
+<dd>Spa and VIP lounge</dd>
+
+</dl>
+
+<ul class="plan-benefits">
+<li>All Silver benefits</li>
+<li>Personal trainer</li>
+<li>Custom nutrition program</li>
+</ul>
+
+<a href="#membership-form" class="choose-plan-btn">
+Choose Gold
+</a>
+
+</article>
+
+</div>
+
+
+
+<!-- =========================
+     REGISTRATION FORM
+========================= -->
+
+<section class="membership-registration" aria-labelledby="register-title">
+
+<h2 id="register-title" class="section-title">
+
+
+Register for Membership
+
+</h2>
+
+
+<form id="membership-form" class="membership-form" action="#" method="post">
+
+
+<fieldset>
+
+<legend>
+
+<span class="material-symbols-outlined">badge</span>
+Personal Information
+
+</legend>
+
+
+<div class="form-group">
+
+<label for="fullname">
+
+<span class="material-symbols-outlined">person</span>
+Full Name
+
+</label>
+
+<input type="text" id="fullname" name="fullname" required>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label for="email">
+
+<span class="material-symbols-outlined">mail</span>
+Email
+
+</label>
+
+<input type="email" id="email" name="email" required>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label for="phone">
+
+<span class="material-symbols-outlined">call</span>
+Phone
+
+</label>
+
+<input type="tel" id="phone" name="phone">
+
+</div>
+
+
+
+<div class="form-group">
+
+<label for="dob">
+
+<span class="material-symbols-outlined">calendar_month</span>
+Date of Birth
+
+</label>
+
+<input type="date" id="dob" name="dob">
+
+</div>
+
+</fieldset>
+
+
+
+<fieldset>
+
+<legend>
+
+<span class="material-symbols-outlined">list</span>
+Membership Plan
+
+</legend>
+
+
+<label class="radio-option">
+<input type="radio" name="plan" value="bronze" required>
+Bronze
+</label>
+
+<label class="radio-option">
+<input type="radio" name="plan" value="silver">
+Silver
+</label>
+
+<label class="radio-option">
+<input type="radio" name="plan" value="gold">
+Gold
+</label>
+
+</fieldset>
+
+
+
+<div class="form-group">
+
+<label for="notes">
+
+<span class="material-symbols-outlined">edit_note</span>
+Additional Notes
+
+</label>
+
+<textarea id="notes" name="notes" rows="4"></textarea>
+
+</div>
+
+
+
+<div class="form-terms">
+
+<label>
+<input type="checkbox" required>
+I agree to the terms and conditions
+</label>
+
+</div>
+
+
+
+<button type="submit" class="submit-button">
+
+<span class="material-symbols-outlined">send</span>
+Submit Registration
+
+</button>
+
+</form>
+
+</section>
+
+
+
+<!-- =========================
+     PAYMENT METHODS
+========================= -->
+
+<section class="payment-methods" aria-labelledby="payment-title">
+
+<h2 id="payment-title" class="section-title">
+
+
+Payment Methods
+
+</h2>
+
+
+<div class="payment-icons">
+
+<img src="../assets/images/visa.png" alt="Visa payment">
+
+<img src="../assets/images/mastercard.png" alt="Mastercard payment">
+
+<img src="../assets/images/paypal.png" alt="PayPal payment">
+
+</div>
+
+</section>
+
+
+
+</main>
+
+ <!-- footer -->
+     <footer id="footer">
+
+  <div class="footer-container">
+
+    <!-- gymInfo -->
+    <div class="footer-section">
+      <h3>Cirta Fitness Club</h3>
+      <p>Build strength, discipline, and confidence in a modern training environment.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h4>Contact</h4>
+
+      <p>
+        <span class="material-symbols-outlined">call</span>
+        +213 000 000 000
+      </p>
+
+      <p>
+        <span class="material-symbols-outlined">mail</span>
+        contact@cirtefitness.com
+      </p>
+
+      <p>
+        <span class="material-symbols-outlined">location_on</span>
+        El Khroub, Algeria
+      </p>
+    </div>
+
+    <!-- Opening Hours -->
+    <div class="footer-section">
+      <h4>Opening Hours</h4>
+
+      <p>
+        <span class="material-symbols-outlined">schedule</span>
+        Mon - Fri : 6:00 - 22:00
+      </p>
+
+      <p>
+        <span class="material-symbols-outlined">schedule</span>
+        Saturday : 8:00 - 20:00
+      </p>
+
+      <p>
+        <span class="material-symbols-outlined">schedule</span>
+        Sunday : Closed
+      </p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+
+      <div class="social-icons">
+
+        <a href="#"><span class="material-symbols-outlined">thumb_up</span></a>
+        <a href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+        <a href="#"><span class="material-symbols-outlined">smart_display</span></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Cirte Fitness Club. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+
+
+</body>
+
+</html>

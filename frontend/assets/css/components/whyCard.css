@@ -1,0 +1,20 @@
+/* WHY CARD */
+
+.why-card {
+  background: var(--color-secondary);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition-normal),
+              box-shadow var(--transition-normal);
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(198,255,0,0.25);
+}
+
+.why-card .material-symbols-outlined {
+  font-size: 40px;
+  color: var(--color-primary);
+}

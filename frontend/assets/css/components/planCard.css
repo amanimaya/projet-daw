@@ -1,0 +1,65 @@
+/* PLAN CARD */
+
+.plan {
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 20px rgba(198, 255, 0, 0.15);
+  transition: transform var(--transition-normal),
+              box-shadow var(--transition-normal);
+}
+
+
+.plan:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(198, 255, 0, 0.35);
+}
+
+.plan h3 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.price {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.available::before {
+  content: "✔";
+  color: var(--color-primary);
+}
+
+.unavailable {
+  color: var(--text-muted);
+}
+
+.unavailable::before {
+  content: "✖";
+  color: #ef4444;
+}
+
+.plan-btn {
+  display: block;
+  margin-top: var(--space-lg);
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: black;
+}
+
+.plan-btn:hover{
+
+box-shadow:var(--glow-primary);
+transform:translateY(-2px);
+
+}

@@ -1,0 +1,411 @@
+/* ===============================
+   MEMBERSHIP PAGE
+================================ */
+
+.membership-page{
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  max-width: 1200px;
+  margin: auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+
+/* ===============================
+   PAGE HEADER
+================================ */
+
+
+
+
+.page-header {
+  position: relative;
+  min-height: 60vh;
+  background-image: url("../../images/backround.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  display: flex;
+  align-items: center;
+  
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(11, 15, 25, 0.85),
+    rgba(11, 15, 25, 0.65)
+  );
+  z-index: 1;
+}
+
+.header-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: var(--space-xl);
+}
+
+.page-title{
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.page-title span{
+  color: var(--color-primary);
+}
+
+.page-description{
+  color: var(--text-soft);
+  margin-top: var(--space-sm);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.page-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+  position: absolute;
+  top: 1px;
+  right: var(--space-xl);
+}
+
+.page-header nav ul {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.page-header nav a {
+  color: var(--text-soft);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.page-header nav a:hover {
+  color: var(--color-primary);
+}
+
+
+/* ===============================
+   SECTION TITLE
+================================ */
+
+.section-title{
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.section-title span{
+  color: var(--color-primary);
+}
+
+
+/* ===============================
+   MEMBERSHIP PLANS
+================================ */
+
+.plans-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.plan-card{
+  background: var(--bg-card);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+}
+
+.plan-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md), var(--glow-primary);
+}
+
+.plan-name{
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.plan-name span{
+  color: var(--color-primary);
+}
+
+.plan-price{
+  margin: var(--space-sm) 0 var(--space-md);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* ===============================
+   CHOOSE PLAN BUTTON
+================================ */
+
+.choose-plan-btn{
+
+ display: block;
+  margin-top: var(--space-lg);
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: black;
+}
+
+.choose-plan-btn:hover{
+
+box-shadow:var(--glow-primary);
+transform:translateY(-2px);
+
+}
+
+
+/* ===============================
+   PLAN FEATURES
+================================ */
+
+.plan-features{
+margin-bottom:var(--space-md);
+}
+
+.plan-features dt{
+font-weight:600;
+margin-top:var(--space-sm);
+}
+
+.plan-features dd{
+margin-left:var(--space-md);
+color:var(--text-soft);
+}
+
+
+/* ===============================
+   PLAN BENEFITS
+================================ */
+
+.plan-benefits{
+
+list-style:disc;
+padding-left:var(--space-lg);
+color:var(--text-soft);
+
+}
+
+.plan-benefits li{
+margin-bottom:var(--space-xs);
+}
+
+/* ===============================
+   PLAN FEATURES
+================================ */
+
+.plan-features{
+  margin-bottom: var(--space-md);
+}
+
+.plan-features dt{
+  font-weight: 600;
+  margin-top: var(--space-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.plan-features dd{
+  margin-left: var(--space-lg);
+  color: var(--text-soft);
+}
+
+
+/* ===============================
+   BENEFITS LIST
+================================ */
+
+.plan-benefits{
+  list-style: disc;
+  padding-left: var(--space-lg);
+  color: var(--text-soft);
+}
+
+.plan-benefits li{
+  margin-bottom: var(--space-xs);
+}
+
+
+/* ===============================
+   REGISTRATION FORM
+================================ */
+
+.membership-registration{
+  margin-top: var(--space-xl);
+}
+
+.membership-form{
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  max-width: 650px;
+  margin: auto;
+  box-shadow: var(--shadow-md);
+}
+
+
+/* ===============================
+   FIELDSET
+================================ */
+
+.membership-form fieldset{
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.membership-form legend{
+  padding: 0 var(--space-sm);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.membership-form legend span{
+  color: var(--color-primary);
+}
+
+
+/* ===============================
+   FORM GROUP
+================================ */
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-md);
+}
+
+.form-group label{
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.form-group label span{
+  color: var(--color-primary);
+}
+
+.form-group input,
+.form-group textarea{
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+
+/* ===============================
+   RADIO OPTIONS
+================================ */
+
+.radio-option{
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  cursor: pointer;
+}
+
+
+/* ===============================
+   TERMS
+================================ */
+
+.form-terms{
+  margin-bottom: var(--space-md);
+}
+
+
+/* ===============================
+   SUBMIT BUTTON
+================================ */
+
+.submit-button{
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  border: none;
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.submit-button:hover{
+  box-shadow: var(--glow-primary);
+  transform: translateY(-2px);
+}
+
+
+/* ===============================
+   PAYMENT METHODS
+================================ */
+
+.payment-methods{
+  margin-top: var(--space-xl);
+  text-align: center;
+}
+
+.payment-icons{
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.payment-icons img{
+  width: 60px;
+  opacity: 0.85;
+  transition: var(--transition-fast);
+}
+
+.payment-icons img:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}

@@ -1,0 +1,253 @@
+/* ===================================
+   CONTACT PAGE HEADER
+=================================== */
+
+.contact-page-header {
+  text-align: center;
+  padding: var(--space-xl);
+  background: linear-gradient(
+    180deg,
+    #0B0F19,
+    #111827
+  );
+}
+
+.contact-page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.contact-page-header p {
+  max-width: 650px;
+  margin: auto;
+  color: var(--text-soft);
+}
+
+
+/* ===================================
+   CONTACT CONTENT LAYOUT
+=================================== */
+
+.contact-content {
+  padding: var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+
+/* ===================================
+   CONTACT FORM SECTION
+=================================== */
+
+.contact-form-section {
+  background: var(--color-secondary);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  max-height: 600px;
+}
+
+.contact-form-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--space-lg);
+}
+
+
+/* FORM */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+ 
+}
+
+
+/* FORM GROUP */
+
+.contact-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-form-group label {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+
+/* INPUTS */
+
+.contact-form-group input,
+.contact-form-group textarea {
+  padding: 0.65rem 0.7rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+
+/* INPUT FOCUS */
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 8px rgba(198,255,0,0.4);
+}
+
+
+/* SEND BUTTON */
+
+.contact-send-btn {
+  margin-top: var(--space-sm);
+  padding: 0.8rem;
+  border-radius: var(--radius-md);
+  border: none;
+  background: var(--color-primary);
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.contact-send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(198,255,0,0.6);
+}
+
+
+/* ===================================
+   CONTACT INFO SECTION
+=================================== */
+
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+
+/* ADDRESS BLOCK */
+
+.contact-address {
+  background: var(--color-secondary);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.contact-address p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--space-sm);
+  color: var(--text-soft);
+}
+
+
+/* ICONS */
+
+.material-symbols-outlined {
+  color: var(--color-primary);
+}
+
+
+/* ===================================
+   MAP PLACEHOLDER
+=================================== */
+
+.contact-map-placeholder {
+  background: #111827;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.contact-map-placeholder h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--space-sm);
+}
+
+.contact-map-placeholder p {
+  color: var(--text-soft);
+}
+
+
+/* ===================================
+   OPENING HOURS
+=================================== */
+
+.contact-hours {
+  background: var(--color-secondary);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.contact-hours h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: var(--space-md);
+}
+
+
+/* TABLE */
+
+.contact-hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.contact-hours-table caption {
+  text-align: left;
+  margin-bottom: var(--space-sm);
+  color: var(--text-soft);
+}
+
+.contact-hours-table th,
+.contact-hours-table td {
+  padding: 0.55rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.contact-hours-table th {
+  color: var(--text-primary);
+}
+
+.contact-hours-table td {
+  color: var(--text-soft);
+}
+
+
+/* ROW HOVER */
+
+.contact-hours-table tbody tr:hover {
+  background: rgba(198,255,0,0.08);
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 900px) {
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+}

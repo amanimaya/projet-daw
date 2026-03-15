@@ -1,0 +1,243 @@
+/* ===============================
+   CLASSES PAGE HEADER
+================================ */
+
+
+
+.class-header {
+  position: relative;
+  min-height: 60vh;
+  background-image: url("../../images/backround.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.class-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(11, 15, 25, 0.85),
+    rgba(11, 15, 25, 0.65)
+  );
+  z-index: 1;
+ 
+}
+
+.header-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: var(--space-xl);
+}
+
+.class-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.class-header p {
+  max-width: 600px;
+  margin: auto;
+  color: var(--text-soft);
+}
+
+.class-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+  position: absolute;
+  top: 1px;
+  right: var(--space-xl);
+}
+
+.class-header  nav ul {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.class-header  nav a {
+  color: var(--text-soft);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.class-header nav a:hover {
+  color: var(--color-primary);
+}
+
+
+/* ===============================
+   FILTER SECTION
+================================ */
+
+.class-filters {
+  padding: var(--space-xl);
+  background: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.class-filters h2 {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.filter-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* Filter Controls */
+
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+
+.filter-controls label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  margin-bottom: 4px;
+}
+
+.filter-controls select {
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--color-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+
+/* ===============================
+   CLASSES TABLE SECTION
+================================ */
+
+.classes-table-section {
+  padding: var(--space-xl);
+}
+
+
+/* TABLE */
+
+.classes-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+/* Caption */
+
+.classes-table caption {
+  caption-side: top;
+  text-align: left;
+  padding: var(--space-md);
+  font-weight: 600;
+  color: var(--text-soft);
+}
+
+/* Header */
+
+.classes-table thead {
+  background: rgba(198,255,0,0.08);
+}
+
+.classes-table th {
+  text-align: left;
+  padding: var(--space-md);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Body */
+
+.classes-table td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+/* Hover Row */
+
+.classes-table tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.classes-table tbody tr:hover {
+  background: rgba(198,255,0,0.08);
+}
+
+/* Link */
+
+.classes-table a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.classes-table a:hover {
+  text-decoration: underline;
+}
+
+
+.difficulty {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.beginner {
+  background: rgba(34,197,94,0.15);
+  color: #22c55e;
+}
+
+.intermediate {
+  background: rgba(250,204,21,0.15);
+  color: #facc15;
+}
+
+.advanced {
+  background: rgba(239,68,68,0.15);
+  color: #ef4444;
+}
+
+
+/* ===============================
+   RESPONSIVE TABLE
+================================ */
+
+@media (max-width: 768px) {
+
+  .classes-table {
+    font-size: 0.85rem;
+  }
+
+  .classes-table th,
+  .classes-table td {
+    padding: 0.6rem;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

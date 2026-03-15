@@ -1,0 +1,25 @@
+/* STAT CARD */
+
+.stat {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--color-secondary);
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition-normal),
+              box-shadow var(--transition-normal);
+}
+
+.stat:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(198,255,0,0.25);
+}
+
+.stat .material-symbols-outlined {
+  font-size: 42px;
+  color: var(--color-primary);
+}
+
+.stat h3 {
+  font-size: 2.2rem;
+  text-shadow: 0 0 10px rgba(198,255,0,0.5);
+}

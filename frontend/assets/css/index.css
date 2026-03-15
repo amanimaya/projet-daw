@@ -1,0 +1,19 @@
+@import "base/reset.css";
+@import "base/variables.css";
+@import "base/typography.css";
+@import "pages/home.css";
+@import "pages/classes.css";
+@import "pages/contact.css";
+@import "pages/membership.css";
+@import "pages/trainer.css";
+
+
+@import "layout/footer.css";
+@import "layout/header.css";
+
+@import "components/facilityCard.css";
+@import "components/planCard.css";
+@import "components/statsCrad.css";
+@import "components/whyCard.css";
+
+

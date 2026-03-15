@@ -1,0 +1,52 @@
+
+:root {
+  /* ****** COLORS ***** */
+
+  /* Brand */
+  --color-primary: #ccff14;      /* Neon green */
+  --color-secondary: #0F172A;    /* Dark navy */
+
+  /* Backgrounds */
+  --bg-main: #0B0F19;
+  --bg-surface: #0F172A;
+  --bg-card: #111827;
+
+  /* Text */
+  --text-primary: #FFFFFF;
+  --text-soft: #A1A1AA;
+  --text-muted: #6B7280;
+
+  /* Borders */
+  --border-color: rgba(51, 53, 51, 0.966);
+
+  /* ****** EFFECTS ****** */
+
+  /* Glow */
+  --glow-primary: 0 0 20px rgba(118, 250, 113, 0.705);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md: 0 6px 20px rgba(0,0,0,0.5);
+
+  /* ******* TYPOGRAPHY ****** */
+
+  --font-main: "Inter", system-ui, sans-serif;
+  --font-heading: "Poppins", system-ui, sans-serif;
+
+  /* *****SPACING ***** */
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* ***** UI ****** */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
