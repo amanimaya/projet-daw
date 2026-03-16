@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../assets/css/index.css">
+<title>Admin Plans | Cirta Fitness Club</title>
+
+
+</head>
+
+<body>
+
+<main class="admin-container">
+
+<!-- VIEW PLANS -->
+<section class="admin-section">
+
+<h1 class="admin-title">Membership Plans</h1>
+
+<div class="table-wrapper">
+
+<table class="plans-table">
+
+<thead>
+<tr>
+<th>Plan</th>
+<th>Price</th>
+<th>Max Classes</th>
+<th>Duration</th>
+<th>Features</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Basic</td>
+<td>$35</td>
+<td>13</td>
+<td>1 Month</td>
+<td>Gym Access</td>
+<td class="actions">
+<button class="btn-edit">Edit</button>
+<button class="btn-delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>Standard ⭐</td>
+<td>$60</td>
+<td>10</td>
+<td>1 Month</td>
+<td>Gym + Classes</td>
+<td class="actions">
+<button class="btn-edit">Edit</button>
+<button class="btn-delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>Premium</td>
+<td>$100</td>
+<td>6</td>
+<td>1 Month</td>
+<td>Gym + Classes + Trainer + Nutrition</td>
+<td class="actions">
+<button class="btn-edit">Edit</button>
+<button class="btn-delete">Delete</button>
+</td>
+</tr>
+
+<tr>
+<td>VIP</td>
+<td>$150</td>
+<td>2</td>
+<td>1 Month</td>
+<td>Full Gym Services + Trainer + Nutrition</td>
+<td class="actions">
+<button class="btn-edit">Edit</button>
+<button class="btn-delete">Delete</button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- CREATE PLAN -->
+
+<section class="admin-section">
+
+<h2 class="admin-subtitle">Create New Plan</h2>
+
+<form class="plan-form">
+
+<div class="form-group">
+<label for="name">Plan Name</label>
+<input type="text" id="name" name="name" placeholder="Enter plan name" required>
+</div>
+
+<div class="form-group">
+<label for="price">Price</label>
+<input type="number" id="price" name="price" placeholder="Enter price" required>
+</div>
+
+<div class="form-group">
+<label for="dur">Duration</label>
+<input type="month" id="dur" name="duration" required>
+</div>
+
+<div class="form-group">
+<label for="des">Description</label>
+<textarea id="des" name="description" rows="4" placeholder="Plan features"></textarea>
+</div>
+
+<div class="form-actions">
+<button type="submit" class="btn-primary">Create Plan</button>
+<button type="reset" class="btn-secondary">Reset</button>
+</div>
+
+</form>
+
+</section>
+
+</main>
+
+</body>
+</html>

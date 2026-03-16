@@ -6,6 +6,10 @@
 @import "pages/contact.css";
 @import "pages/membership.css";
 @import "pages/trainer.css";
+@import "pages/adminDashboard.css";
+@import "pages/adminLogin.css";
+@import "pages/adminPlan.css";
+
 
 
 @import "layout/footer.css";
